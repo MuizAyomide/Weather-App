@@ -33,7 +33,7 @@ const App = () => {
   const [city, setCity] = useState('Madrid');
   const [searchInput, setSearchInput] = useState('');
 
-  const API_KEY = '3706117d6ec4c15800bc2012586000de'; 
+  const API_KEY = import.meta.env.VITE_API_KEY; 
 
   const fetchWeatherData = async () => {
     setLoading(true);
